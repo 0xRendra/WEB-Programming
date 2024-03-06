@@ -1,94 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Free Registration</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            padding: 20px;
-        }
-        
-        h2 {
-            color: #9966FF;
-            text-align: center;
-        }
-        
-        form {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        
-        td {
-            padding: 10px;
-        }
-        
-        input[type="text"],
-        textarea,
-        select {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        
-        input[type="submit"],
-        input[type="reset"] {
-            background-color: #9966FF;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        
-        input[type="submit"]:hover,
-        input[type="reset"]:hover {
-            background-color: #7B68EE;
-        }
-    </style>
+    <title>Form</title>
 </head>
 <body>
-    <h2>Pendaftaran Gratis</h2>
+    <h2 align="center"><font color="#9966FF">Free Registration</font></h2>
     <form action="proses.php" method="post" name="form">
-        <table>
+        <table width="68%" border="0" align="center" cellpadding="0">
             <tr>
-                <td>Nama</td>
-                <td>:</td>
-                <td><input type="text" name="txtNama" id="txtNama" required></td>
+                <td width="15%">Nama</td>
+                <td width="2%">:</td>
+                <td width="83%"><input name="txtNama" type="text" id="txtNama"></td>
             </tr>
             <tr>
-                <td>Tanggal Lahir</td>
+                <td>Tgl Lahir</td>
                 <td>:</td>
                 <td>
-                    <input type="text" name="txtTgl" id="txtTgl" size='4' maxlength='2' placeholder="TT" required> / <input type="text" name="txtBulan" id="txtBulan" size="4" maxlength="2" placeholder="BB" required>/<input type="text" name="txtTahun" id="txtTahun" size="8" maxlength="4" placeholder="TTTT" required>
+                    <input name="txtTgl" type="text" id="txtTgl" size="4" maxlength="2"> /
+                    <input name="txtBulan" type="text" id="txtBulan" size="4" maxlength="2"> /
+                    <input name="txtTahun" type="text" id="txtTahun" size="8" maxlength="4">
                 </td>
             </tr>
             <tr>
                 <td>Alamat</td>
                 <td>&nbsp;</td>
-                <td><textarea name="txtAlamat" id="txtAlamat" cols="40" rows="2" required></textarea></td>
+                <td><textarea name="txtAlamat" cols="40" rows="2" id="txtAlamat"></textarea></td>
             </tr>
             <tr>
                 <td>Kota</td>
                 <td>:</td>
-                <td><input type="text" name="txtKota" id="txtKota" required></td>
+                <td><input name="txtKota" type="text" id="txtKota"></td>
             </tr>
             <tr>
                 <td>Pekerjaan</td>
                 <td>:</td>
                 <td>
-                    <select name="cboJob" id="cboJob" required>
-                        <option value="">Pilih Pekerjaan</option>
-                        <option>Petani</option>
+                    <select name="cboJob" id="cboJob">
+                        <option>Tani</option>
                         <option>Nelayan</option>
                         <option>Karyawan</option>
                     </select>
@@ -98,26 +46,36 @@
                 <td>Jenis Kelamin</td>
                 <td>:</td>
                 <td>
-                    <input type="radio" name="radJk" value="1" checked required> Laki-laki
-                    <input type="radio" name="radJk" value="2" required> Perempuan
+                    <input name="radJk" type="radio" value="1" checked> Laki-Laki
+                    <input type="radio" name="radJk" value="2"> Perempuan
                 </td>
             </tr>
             <tr>
-                <td>Hobi</td>
+                <td>Hobby</td>
                 <td>:</td>
-                <td>
-                    <input type="checkbox" name="cekReading" id="cekReading" value="1"> Membaca
-                    <input type="checkbox" name="cekSport" id="cekSport" value="2"> Olahraga
-                    <input type="checkbox" name="cekSing" id="cekSing" value="3"> Menyanyi
-                    <input type="checkbox" name="cekTravel" id="cekTravel" value="4"> Traveling
-                </td>
+                <td><input name="cekReading" type="checkbox" id="cekReading" value="1"> Reading</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><input name="cekSport" type="checkbox" id="cekSport" value="2"> Sport</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><input name="cekSing" type="checkbox" id="cekSing" value="3"> Singing</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><input name="cekTravel" type="checkbox" id="cekTravel" value="4"> Traveling</td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>
-                    <input type="submit" name="btnKirim" id="btnKirim" value="Kirim">
-                    <input type="reset" name="btnCancel" id="btnCancel" value="Batal">
+                    <input name="btnKirim" type="submit" id="btnKirim" value="Kirim">
+                    <input name="btnCancel" type="reset" id="btnCancel" value="Cancel">
                 </td>
             </tr>
         </table>

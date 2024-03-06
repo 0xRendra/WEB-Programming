@@ -1,15 +1,21 @@
-<HTML>
-<HEAD><TITLE>Font</TITLE></HEAD>
-<BODY>
-<FONT face=’comic sans ms’></FONT></BR>
-<FONT size=’5’ face=’verdana’ color=’red’>
-</FONT></BR>
-Teks cetak <b>Tebal</b>
-<i>Miring</i>
-<u>Garis Bawah</u>
-<strike>Garis tengah</strike>
-<sup>Superscript</sup> dan
-<sub>Subscript</sub>
-</FONT>
-</BODY>
-</HTML>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Font</title>
+    <style>
+        .comic-sans {
+            font-family: 'Comic Sans MS', cursive;
+        }
+        .verdana-red {
+            font-family: Verdana, sans-serif;
+            font-size: 24px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="comic-sans">Ini menggunakan font 'Comic Sans MS'.</p>
+    <p class="verdana-red">Ini menggunakan font Verdana, ukuran 24px, dan warna merah.</p>
+    Teks cetak <b>Tebal</b> <i>Miring</i> <u>Garis Bawah</u> <strike>Garis tengah</strike> <sup>Superscript</sup> dan <sub>Subscript</sub>
+</body>
+</html>
