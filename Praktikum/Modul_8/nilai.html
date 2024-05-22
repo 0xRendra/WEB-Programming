@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kategori Nilai</title>
+</head>
+<body>
+    <h1>Kategori Nilai</h1>
+    <label for="nilai">Masukkan Nilai:</label>
+    <input type="text" id="nilai" name="nilai">
+    <button onclick="kategorikan()">Kategorikan</button>
+    <br><br>
+    <label for="kategori">Kategori:</label>
+    <input type="text" id="kategori" name="kategori" readonly>
+
+    <script>
+        function kategorikan() {
+            let nilai = document.getElementById("nilai").value;
+            let kategori = document.getElementById("kategori");
+
+            if (nilai >= 0 && nilai <= 20) {
+                kategori.value = "E";
+            } else if (nilai >= 21 && nilai <= 40) {
+                kategori.value = "D";
+            } else if (nilai >= 41 && nilai <= 60) {
+                kategori.value = "C";
+            } else if (nilai >= 61 && nilai <= 80) {
+                kategori.value = "B";
+            } else if (nilai >= 81 && nilai <= 100) {
+                kategori.value = "A";
+            } else {
+                kategori.value = "Nilai tidak valid";
+            }
+        }
+    </script>
+</body>
+</html>

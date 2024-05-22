@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAME OF THE SITE</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "header header header header"
+        "nav nav nav nav"
+        "main main main main"
+        "tiles tiles tiles tiles"
+        "footer footer footer footer";
+      gap: 10px;
+    }
+
+    .header {
+      grid-area: header;
+      text-align: center;
+    }
+
+    .nav {
+      grid-area: nav;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #333;
+      padding: 8px 16px;
+      flex: 1;
+      text-align: center;
+    }
+
+    .main {
+      grid-area: main;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      height: 400px;
+    }
+
+    .main img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .main img.active {
+      opacity: 1;
+    }
+
+    .tiles {
+      grid-area: tiles;
+      display: flex;
+      justify-content: center;
+    }
+
+    .tile {
+      /* margin: 0 10px; */
+      text-align: center;
+    }
+
+    .footer {
+      grid-area: footer;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="header">
+      <h1>NAME OF THE SITE</h1>
+    </div>
+    <div class="nav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="main">
+      <img src="beach.jpg" alt="Beach" class="active">
+      <img src="mountain.jpg" alt="Mountain">
+      <img src="city.jpg" alt="City">
+    </div>
+    <div class="tiles">
+      <div class="tile">
+        <img src="tile1.jpg" alt="Tile 1">
+        <p>This is a title.</p>
+        <p>This is a subtitle. Double-click to edit.</p>
+      </div>
+      <div class="tile">
+        <img src="tile2.jpg" alt="Tile 2">
+        <p>This is a title.</p>
+        <p>This is a subtitle. Double-click to edit.</p>
+      </div>
+      <div class="tile">
+        <img src="tile3.jpg" alt="Tile 3">
+        <p>This is a title.</p>
+        <p>This is a subtitle. Double-click to edit.</p>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyright &copy; Your Website. All Rights Reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
