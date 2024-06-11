@@ -1,0 +1,63 @@
+-- Create the database
+CREATE DATABASE Warehouse;
+USE Warehouse;
+
+-- Create the Gudang table
+CREATE TABLE Gudang (
+    kode_gudang VARCHAR(10) PRIMARY KEY,
+    nama_gudang VARCHAR(50),
+    lokasi VARCHAR(100)
+);
+
+-- Create the Barang table
+CREATE TABLE Barang (
+    kode_barang VARCHAR(10) PRIMARY KEY,
+    nama_barang VARCHAR(50),
+    kode_gudang VARCHAR(10),
+    FOREIGN KEY (kode_gudang) REFERENCES Gudang(kode_gudang) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+-- Create the Masuk table
+CREATE TABLE Masuk (
+    kode_gudang VARCHAR(10),
+    kode_barang VARCHAR(10),
+    FOREIGN KEY (kode_gudang) REFERENCES Gudang(kode_gudang),
+    FOREIGN KEY (kode_barang) REFERENCES Barang(kode_barang),
+    PRIMARY KEY (kode_gudang, kode_barang)
+);
+
+-- Insert dummy data into Gudang table
+INSERT INTO Gudang (kode_gudang, nama_gudang, lokasi) VALUES
+('GD001', 'Gudang Utama', 'Jakarta'),
+('GD002', 'Gudang Cabang 1', 'Bandung'),
+('GD003', 'Gudang Cabang 2', 'Surabaya'),
+('GD004', 'Gudang Cabang 3', 'Medan'),
+('GD005', 'Gudang Cabang 4', 'Makassar'),
+('GD006', 'Gudang Cabang 5', 'Semarang'),
+('GD007', 'Gudang Cabang 6', 'Yogyakarta'),
+('GD008', 'Gudang Cabang 7', 'Denpasar'),
+('GD009', 'Gudang Cabang 8', 'Palembang'),
+('GD010', 'Gudang Cabang 9', 'Pekanbaru');
+
+-- Insert dummy data into Barang table
+INSERT INTO Barang (kode_barang, nama_barang, kode_gudang) VALUES
+('BR001', 'Produk A', 'GD001'),
+('BR002', 'Produk B', 'GD002'),
+('BR003', 'Produk C', 'GD003'),
+('BR004', 'Produk D', 'GD004'),
+('BR005', 'Produk E', 'GD005'),
+('BR006', 'Produk F', 'GD001'),
+('BR007', 'Produk G', 'GD002'),
+('BR008', 'Produk H', 'GD003'),
+('BR009', 'Produk I', 'GD004'),
+('BR010', 'Produk J', 'GD005'),
+('BR011', 'Produk K', 'GD001'),
+('BR012', 'Produk L', 'GD002'),
+('BR013', 'Produk M', 'GD003'),
+('BR014', 'Produk N', 'GD004'),
+('BR015', 'Produk O', 'GD005'),
+('BR016', 'Produk P', 'GD001'),
+('BR017', 'Produk Q', 'GD002'),
+('BR018', 'Produk R', 'GD003'),
+('BR019', 'Produk S', 'GD004'),
+('BR020', 'Produk T', 'GD005');

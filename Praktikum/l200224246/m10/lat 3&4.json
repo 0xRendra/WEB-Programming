@@ -1,0 +1,44 @@
+{
+    "nama": "Raka Rendra Fayanto",        // String
+    "nim": "L200224246",                  // String
+    "universitas": "Universitas Muhamadiyah Surakarta", // String
+    "umur": 20,                      // Number
+    "isMahasiswa": true,             // Boolean
+    "tanggalLulus": null,            // Null
+    "alamat": {                      // Object
+      "jalan": "jalan-jalan", // String
+      "kota": "Boyolali",           // String
+      "kodePos": 12345               // Number
+    },
+    "hobi": [                        // Array
+      "membaca",                     // String
+      "speeding",                   // String
+      "main game"                      // String
+    ],
+    "mataKuliah": [                  // Array of Objects
+      {
+        "nama": "Pemrograman WEB", // String
+        "kode": "IF201",              // String
+        "sks": 3,                    // Number
+        "lulus": true                // Boolean
+      },
+      {
+        "nama": "Matematika Diskrit", // String
+        "kode": "IF202",              // String
+        "sks": 3,                    // Number
+        "lulus": true                // Boolean
+      },
+      {
+        "nama": "Sistem Operasi",    // String
+        "kode": "IF203",              // String
+        "sks": 3,                    // Number
+        "lulus": false               // Boolean
+      }
+    ],
+    "nilai": {                       // Object
+      "Pemrograman Lanjut": "A+",     // String
+      "Matematika Diskrit": "A+",    // String
+      "Sistem Operasi": null         // Null (nilai belum keluar)
+    }
+  }
+  

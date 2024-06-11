@@ -1,0 +1,37 @@
+
+{
+    "mahasiswa": [
+        {
+            "namaLengkap": "Raka Rendra Fayanto",
+            "alamat": "Boyolali",
+            "prodi": "Informatika",
+            "usia": 20,
+            "lulus": false,
+            "mataKuliah": [
+                "Pemrograman Website",
+                "Algoritma Pemrograman",
+                "Kapita Selekta"
+            ],
+            "nilai": {
+                "Aljabar Linier": "A",
+                "Logika Matematika": "A"
+            }
+        },
+        {
+            "namaLengkap": "Budi Setiawan",
+            "alamat": "Jln Pusaka Jawa No 12 Boyolali",
+            "prodi": "Informatika",
+            "usia": 21,
+            "lulus": false,
+            "mataKuliah": [
+                "Jaringan Komputer",
+                "Sistem Basis Data",
+                "Skripsi"
+            ],
+            "nilai": {
+                "Aljabar Linier": "A",
+                "Logika Matematika": "A"
+            }
+        }
+    ]
+}

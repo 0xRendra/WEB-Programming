@@ -1,0 +1,16 @@
+{
+    "namaLengkap": "Raka Rendra Fayanto",
+    "alamat": "Boyolali",
+    "prodi": "Informatika",
+    "usia": 20,
+    "lulus": false,
+    "mataKuliah": [
+        "Pemrograman Website",
+        "Algoritma Pemrograman",
+        "Kapita Selekta"
+    ],
+    "nilai": {
+        "Aljabar Linier": "A",
+        "Logika Matematika": "A"
+    }
+}

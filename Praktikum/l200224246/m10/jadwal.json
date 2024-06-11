@@ -1,0 +1,191 @@
+{
+    "mataKuliah": [
+      {
+        "nama": "Jaringan Komputer",
+        "sks": 3,
+        "jadwal": {
+          "hari": "Senin",
+          "jam": "1-3",
+          "ruang": "J0410"
+        },
+        "kelas": "A",
+        "dosenPengampu": "Yudi Wahyu Wibowo, ST, M.Eng",
+        "babMateri": [
+          "Pengantar Jaringan Komputer",
+          "Topologi Jaringan",
+          "Protokol Jaringan",
+          "Keamanan Jaringan"
+        ]
+      },
+      {
+        "nama": "Algoritma dan Struktur Data",
+        "sks": 3,
+        "jadwal": {
+          "hari": "Senin",
+          "jam": "7-9",
+          "ruang": "J0403"
+        },
+        "kelas": "C",
+        "dosenPengampu": "Endang Wahyu Pamungkas, SKom,MKom.",
+        "babMateri": [
+          "Pengantar Algoritma",
+          "Struktur Data Dasar",
+          "Algoritma Rekursif",
+          "Pengurutan dan Pencarian"
+        ]
+      },
+      {
+        "nama": "Bahasa Indonesia",
+        "sks": 2,
+        "jadwal": {
+          "hari": "Selasa",
+          "jam": "3-4",
+          "ruang": "J0403"
+        },
+        "kelas": "D",
+        "dosenPengampu": "Ali Imron Al Ma'ruf, Prof. Dr. M.Hum",
+        "babMateri": [
+          "Ejaan dan Tata Bahasa",
+          "Penulisan Ilmiah",
+          "Karya Sastra",
+          "Bahasa Indonesia dalam Teknologi"
+        ]
+      },
+      {
+        "nama": "Praktikum Pemrograman WEB",
+        "sks": 1,
+        "jadwal": {
+          "hari": "Selasa",
+          "jam": "5-6",
+          "ruang": "LABRPL"
+        },
+        "kelas": "F",
+        "dosenPengampu": "Gunawan Ariyanto, ST. M.Comp Sc., Ph.D",
+        "babMateri": [
+          "HTML dan CSS",
+          "JavaScript Dasar",
+          "Framework Web",
+          "Proyek Akhir"
+        ]
+      },
+      {
+        "nama": "Organisasi dan Arsitektur Komputer",
+        "sks": 3,
+        "jadwal": {
+          "hari": "Selasa",
+          "jam": "11-12",
+          "ruang": "J0403"
+        },
+        "kelas": "D",
+        "dosenPengampu": "Helmi Imaduddin, S.Kom., M.Eng.",
+        "babMateri": [
+          "Struktur Dasar Komputer",
+          "Memori Komputer",
+          "Prosesor dan Kontrol",
+          "Arsitektur Komputer Modern"
+        ]
+      },
+      {
+        "nama": "Praktikum Jaringan Komputer",
+        "sks": 1,
+        "jadwal": {
+          "hari": "Rabu",
+          "jam": "7-8",
+          "ruang": "LSITIF"
+        },
+        "kelas": "J",
+        "dosenPengampu": "Jan Wantoro, S.T.,M.Eng.",
+        "babMateri": [
+          "Konfigurasi Jaringan",
+          "Analisis Protokol",
+          "Keamanan Jaringan",
+          "Proyek Akhir"
+        ]
+      },
+      {
+        "nama": "Kemuhammadiyahan",
+        "sks": 2,
+        "jadwal": {
+          "hari": "Kamis",
+          "jam": "5-6",
+          "ruang": "J0407"
+        },
+        "kelas": "D",
+        "dosenPengampu": "Yeti Dahliana, S.Si., S.Th.I., M.Ag",
+        "babMateri": [
+          "Sejarah Muhammadiyah",
+          "Prinsip Dasar Muhammadiyah",
+          "Muhammadiyah dan Pendidikan",
+          "Muhammadiyah dalam Kehidupan Masyarakat"
+        ]
+      },
+      {
+        "nama": "Rekayasa Perangkat Lunak",
+        "sks": 3,
+        "jadwal": {
+          "hari": "Kamis",
+          "jam": "7-9",
+          "ruang": "JSEM2"
+        },
+        "kelas": "B",
+        "dosenPengampu": "Dosen Belum Ditentukan",
+        "babMateri": [
+          "Siklus Hidup Pengembangan Perangkat Lunak",
+          "Analisis dan Desain",
+          "Pengujian Perangkat Lunak",
+          "Pemeliharaan Perangkat Lunak"
+        ]
+      },
+      {
+        "nama": "Pemrograman WEB",
+        "sks": 3,
+        "jadwal": {
+          "hari": "Kamis",
+          "jam": "10-12",
+          "ruang": "J0410"
+        },
+        "kelas": "C",
+        "dosenPengampu": "Maryam , S.Kom., M.Eng.",
+        "babMateri": [
+          "HTML dan CSS Lanjutan",
+          "JavaScript Lanjutan",
+          "Pengembangan Frontend",
+          "Proyek Akhir"
+        ]
+      },
+      {
+        "nama": "Aljabar Linier dan Matriks",
+        "sks": 3,
+        "jadwal": {
+          "hari": "Jumat",
+          "jam": "7-9",
+          "ruang": "J0407"
+        },
+        "kelas": "B",
+        "dosenPengampu": "Aris Rakhmadi, S.T., M.Eng",
+        "babMateri": [
+          "Vektor dan Ruang Vektor",
+          "Sistem Persamaan Linier",
+          "Eigenvalues dan Eigenvectors",
+          "Dekomposisi Matriks"
+        ]
+      },
+      {
+        "nama": "Praktikum Algoritma dan Struktur Data",
+        "sks": 1,
+        "jadwal": {
+          "hari": "Jumat",
+          "jam": "11-12",
+          "ruang": "LABRPL"
+        },
+        "kelas": "D",
+        "dosenPengampu": "Asy Syifaur Roisah Rufaida",
+        "babMateri": [
+          "Implementasi Struktur Data Dasar",
+          "Algoritma Pengurutan",
+          "Algoritma Pencarian",
+          "Proyek Akhir"
+        ]
+      }
+    ]
+  }
